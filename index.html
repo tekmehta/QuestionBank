@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="property-list.css">
+    <title>PG-Life</title>
+</head>
+<body>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/nepal_flag.gif" alt="" height="100px" width="100px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <form class="d-flex align-items-center justify-content-center text-center">
+                    <span>
+
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#signup"><i class="fas fa-user p-3"></i>Sign Up</a> 
+                    <i class="p-3">|</i>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#login"><i class="fas fa-sign-in-alt p-3"></i>Log In</a>
+                    </span>
+                </form>
+              </div>
+            </div>
+        </nav>
+        <div class="navbar-marquee bg-secondary text-white">
+            <marquee behavior="" direction="">Loksewa Questions Bank</marquee>
+        </div>
+    </div><br>
+<style>
+    .sticky-top .navbar-marquee marquee{
+        font-size: 35px;
+    }
+</style>
+
+    <div class="bg-light pt-3 pb-1 p-3">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+          </nav>
+    </div>
+
+    <!-- content body -->
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col-6">
+        <a href="syllabus.html">
+            <div class="card h-100">
+                <img class=".banner-container" src="img/syllabus.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Syllabus</h3>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+        </a>
+      </div>
+      <div class="col-6">
+        <a href="question.html">
+            <div class="card h-100">
+                <img src="img/quetio.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Question</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </a>
+      </div>
+      <!-- <div class="col-6">
+        <a href="exam-lebel.html">
+            <div class="card h-100">
+            <img src="img/exam level.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Exam Levels</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </a>
+      </div> -->
+      <div class="col-6">
+        <a href="update.html">
+            <div class="card h-100">
+                <img src="img/update.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Update</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </a>
+      </div>
+    </div>
+  </div>  
+<style>
+    .container .row a{
+        text-decoration: none;
+        color: black;}
+
+    .container .row a div{
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.572);
+        border-radius: 10px;
+    }
+    body{
+        background-color:rgba(216, 216, 216, 0.582);
+    }
+</style>
+
+     <!-- Modal toggle for create -->
+    <div>
+            <!-- Modal toggle for Signin -->
+            <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-body">
+                        <div class="container">
+                          <div class="row">
+                              <div class="col-md-3 ">
+                                  <select name="" id="" class="form-control email input">
+                                      <option value="">+91</option>
+                                      <option value="">+11</option>
+                                      <option value="">+01</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-9">
+                                  <input type="number" class="form-control email input">
+                              </div>
+                          </div>
+                          <div class="row mt-3">
+                              <div class="col-md-12">
+                                  <button class="btn btn-lg btn-xl btn-danger form-control">Send One Time Password</button>
+                              </div>
+                          </div>
+                          <div class="row mt-2">
+                             <div class="col-md-12">
+                              <center><span>or</span></center>
+                             </div>
+                          </div>
+      
+                          <div class="row mt-4">
+                              <div class="col-md-12">
+                                  <div class="card">
+                                      <div class="card-body">
+                                          <center>
+                                              <i class="fab fa-envelope" aria-hidden="true" class="text-dark" style="font-size: 20px; color: rgb(255, 92, 92);">&nbsp; &nbsp; &nbsp; Continue With Email</i>
+                                          </center>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="row mt-4">
+                              <div class="col-md-12">
+                                  <div class="card">
+                                      <div class="card-body">
+                                          <center>
+                                              <i class="fab fa-google" aria-hidden="true" class="text-dark" style="font-size: 20px; color: rgb(255, 92, 92);">&nbsp; &nbsp; &nbsp; Continue With Google</i>
+                                          </center>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+      
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>  
+            <!-- Modal toggle for Signup -->
+            <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signup" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <input type="text" class="form-control" placeholder="Enter Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <input type="email" class="form-control" placeholder="Enter Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                I agree to Zomato's Terms of Service, Privacy Policy and Content Policies
+                            </label>
+                          </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <button class="btn btn-lg btn-xl btn-danger form-control">Create Account</button>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                           <div c-ass="col-md-12">
+                            <center><span>or</span></center>
+                           </div>
+                        </div>
+    
+                        
+    
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <center>
+                                            <i class="fa fa-google" aria-hidden="true" class="text-dark" style="font-size: 20px; color: rgb(255, 92, 92);">&nbsp; &nbsp; &nbsp; Continue With Google</i>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#login" class="nav-link text-dark">Already have an Account? <span style="color: rgb(255, 92, 92);">Login</span></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </div>
+    <hr>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div>
+            <!-- Footer -->
+            <footer
+                    class="text-center text-lg-start text-white"
+                    style="background-color: #929fba"
+                    >
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+        
+                    <hr class="w-100 clearfix d-md-none" />
+        
+                    <!-- Grid column -->
+                    <div class="col-md-1 col-lg-5 col-xl-2 mx-auto mt-1">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">our locations</h6>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1784.6988483652806!2d86.74821072614314!3d26.53948888463723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1686163886752!5m2!1sen!2snp" height="200" width="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- Grid column -->
+        
+                    <hr class="w-100 clearfix d-md-none" />
+        
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+        
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i> Rajbiraj, saptari</p>
+                    <p><i class="fas fa-envelope mr-3"></i> ntek7907@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +977 9824765952</p>
+                    <p><i class="fab fa-whatsapp mr-3" aria-hidden="true"></i> +977 9824765952</p>
+                    </div>
+                    <!-- Grid column -->
+        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+        
+                    <!-- Facebook -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #3b5998"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-facebook-f"></i
+                        ></a>
+        
+                    <!-- Twitter -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #55acee"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-twitter"></i
+                        ></a>
+        
+                    <!-- Google -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #dd4b39"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-google"></i
+                        ></a>
+        
+                    <!-- Instagram -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #ac2bac"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-instagram"></i
+                        ></a>
+        
+                    <!-- Linkedin -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #0082ca"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                    <!-- Github -->
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #333333"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-github"></i
+                        ></a>
+                    </div>
+                </div>
+                <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div
+                class="text-center p-3"
+                style="background-color: rgba(0, 0, 0, 0.2)"
+                >
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/"
+                >loksewapreperation.com</a
+                >
+            </div>
+            <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+</body>
+</html>
